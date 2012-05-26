@@ -295,6 +295,7 @@ class Episode(object):
         self._synopsis_unread = False
         self.number, self.name, self.season, \
             self.air_date, self._synopsis_url = episode_data
+        self.season = int(self.season)
 
     @property
     def synopsis(self):
